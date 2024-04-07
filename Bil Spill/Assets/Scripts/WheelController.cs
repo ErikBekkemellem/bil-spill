@@ -27,7 +27,6 @@ public class WheelController : MonoBehaviour
     {
         Acceleration();
         Break();
-        Torque();
         Angle();
 
         UpdateWheel(frontLeft, frontLeftTransform);
@@ -39,6 +38,9 @@ public class WheelController : MonoBehaviour
     public void Acceleration()
     {
         currentAcceleration = acceleration * Input.GetAxis("Vertical");
+
+        backRight.motorTorque = currentAcceleration;
+        backLeft.motorTorque = currentAcceleration;
     }
 
     public void Break()
@@ -47,12 +49,6 @@ public class WheelController : MonoBehaviour
             currentBreakForce = breakForce;
         else
             currentBreakForce = 0f;
-    }
-
-    public void Torque()
-    {
-        backRight.motorTorque = currentAcceleration;
-        backLeft.motorTorque = currentAcceleration;
 
         frontRight.brakeTorque = currentBreakForce;
         frontLeft.brakeTorque = currentBreakForce;
