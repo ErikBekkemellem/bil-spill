@@ -37,7 +37,7 @@ public class WheelController : MonoBehaviour
 
     public void Acceleration()
     {
-        currentAcceleration = acceleration * Input.GetAxis("Vertical");
+        currentAcceleration = acceleration * Input.GetAxis("Vertical1");
 
         backRight.motorTorque = currentAcceleration;
         backLeft.motorTorque = currentAcceleration;
@@ -58,7 +58,7 @@ public class WheelController : MonoBehaviour
 
     public void Angle()
     {
-        currentTurnAngle = maxTurnAngle * Input.GetAxis("Horizontal");
+        currentTurnAngle = maxTurnAngle * Input.GetAxis("Horizontal1");
         frontLeft.steerAngle = currentTurnAngle;
         frontRight.steerAngle = currentTurnAngle;
     }
