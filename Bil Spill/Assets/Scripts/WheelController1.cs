@@ -45,7 +45,7 @@ public class WheelController1 : MonoBehaviour
 
     public void Break()
     {
-        if (Input.GetKey(KeyCode.KeypadEnter))
+        if (Input.GetKey(KeyCode.Return))
             currentBreakForce = breakForce;
         else
             currentBreakForce = 0f;
