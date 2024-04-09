@@ -123,30 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &258629738 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1410630049563692528, guid: 88d0473bff323424996548517b9f3067, type: 3}
-  m_PrefabInstance: {fileID: 6840927952649036846}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &258629739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 258629738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0df30d35f91a1b543baac5ed2a098355, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  com: {x: 0, y: 0, z: 0}
-  rb: {fileID: 258629743}
---- !u!54 &258629743 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 5810441972383928857, guid: 88d0473bff323424996548517b9f3067, type: 3}
-  m_PrefabInstance: {fileID: 6840927952649036846}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,98 +217,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &963194225
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 963194228}
-  - component: {fileID: 963194227}
-  - component: {fileID: 963194226}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!81 &963194226
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
---- !u!20 &963194227
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_Iso: 200
-  m_ShutterSpeed: 0.005
-  m_Aperture: 16
-  m_FocusDistance: 10
-  m_FocalLength: 50
-  m_BladeCount: 5
-  m_Curvature: {x: 2, y: 11}
-  m_BarrelClipping: 0.25
-  m_Anamorphism: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &963194228
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.21437643, y: -0, z: -0, w: 0.97675115}
-  m_LocalPosition: {x: 0, y: 2.88, z: -8.618306}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 24.758, y: 0, z: 0}
 --- !u!1 &1001761429
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,6 +322,79 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 67.702, y: 0, z: 0}
+--- !u!1001 &1252430474
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2717843712399104148, guid: 0a408acfd957b9d469498aa4ddf36985, type: 3}
+      propertyPath: m_NormalizedViewPortRect.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2717843712399104148, guid: 0a408acfd957b9d469498aa4ddf36985, type: 3}
+      propertyPath: m_NormalizedViewPortRect.width
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6442310461743642758, guid: 0a408acfd957b9d469498aa4ddf36985, type: 3}
+      propertyPath: WASD
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6442310461743642758, guid: 0a408acfd957b9d469498aa4ddf36985, type: 3}
+      propertyPath: player1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282772008711335601, guid: 0a408acfd957b9d469498aa4ddf36985, type: 3}
+      propertyPath: m_Name
+      value: Free Racing Car Gray Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951749605284508683, guid: 0a408acfd957b9d469498aa4ddf36985, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 17.846132
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951749605284508683, guid: 0a408acfd957b9d469498aa4ddf36985, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.8954005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951749605284508683, guid: 0a408acfd957b9d469498aa4ddf36985, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -14.191441
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951749605284508683, guid: 0a408acfd957b9d469498aa4ddf36985, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951749605284508683, guid: 0a408acfd957b9d469498aa4ddf36985, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951749605284508683, guid: 0a408acfd957b9d469498aa4ddf36985, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951749605284508683, guid: 0a408acfd957b9d469498aa4ddf36985, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951749605284508683, guid: 0a408acfd957b9d469498aa4ddf36985, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951749605284508683, guid: 0a408acfd957b9d469498aa4ddf36985, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951749605284508683, guid: 0a408acfd957b9d469498aa4ddf36985, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0a408acfd957b9d469498aa4ddf36985, type: 3}
 --- !u!1 &1965437678
 GameObject:
   m_ObjectHideFlags: 0
@@ -543,7 +500,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &6840927952649036846
+--- !u!1001 &8473759664480767637
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -551,89 +508,65 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1410630049563692528, guid: 88d0473bff323424996548517b9f3067, type: 3}
-      propertyPath: m_Name
-      value: Free Racing Car
-      objectReference: {fileID: 0}
-    - target: {fileID: 2429824785407922353, guid: 88d0473bff323424996548517b9f3067, type: 3}
-      propertyPath: m_SidewaysFriction.m_ExtremumSlip
-      value: 0.95
-      objectReference: {fileID: 0}
-    - target: {fileID: 4326967937107409482, guid: 88d0473bff323424996548517b9f3067, type: 3}
-      propertyPath: m_SidewaysFriction.m_Stiffness
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4326967937107409482, guid: 88d0473bff323424996548517b9f3067, type: 3}
-      propertyPath: m_SidewaysFriction.m_ExtremumSlip
-      value: 0.95
-      objectReference: {fileID: 0}
-    - target: {fileID: 4985054839256529577, guid: 88d0473bff323424996548517b9f3067, type: 3}
+    - target: {fileID: 2792218741957914664, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 14.019592
       objectReference: {fileID: 0}
-    - target: {fileID: 4985054839256529577, guid: 88d0473bff323424996548517b9f3067, type: 3}
+    - target: {fileID: 2792218741957914664, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.7
+      value: -0.895401
       objectReference: {fileID: 0}
-    - target: {fileID: 4985054839256529577, guid: 88d0473bff323424996548517b9f3067, type: 3}
+    - target: {fileID: 2792218741957914664, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.8283062
+      value: -14.036356
       objectReference: {fileID: 0}
-    - target: {fileID: 4985054839256529577, guid: 88d0473bff323424996548517b9f3067, type: 3}
+    - target: {fileID: 2792218741957914664, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4985054839256529577, guid: 88d0473bff323424996548517b9f3067, type: 3}
+    - target: {fileID: 2792218741957914664, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4985054839256529577, guid: 88d0473bff323424996548517b9f3067, type: 3}
+    - target: {fileID: 2792218741957914664, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4985054839256529577, guid: 88d0473bff323424996548517b9f3067, type: 3}
+    - target: {fileID: 2792218741957914664, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4985054839256529577, guid: 88d0473bff323424996548517b9f3067, type: 3}
+    - target: {fileID: 2792218741957914664, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4985054839256529577, guid: 88d0473bff323424996548517b9f3067, type: 3}
+    - target: {fileID: 2792218741957914664, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4985054839256529577, guid: 88d0473bff323424996548517b9f3067, type: 3}
+    - target: {fileID: 2792218741957914664, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5335565107037424569, guid: 88d0473bff323424996548517b9f3067, type: 3}
-      propertyPath: m_SidewaysFriction.m_Stiffness
-      value: 2
+    - target: {fileID: 3311311803080157842, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
+      propertyPath: m_Name
+      value: Free Racing Car
       objectReference: {fileID: 0}
-    - target: {fileID: 5335565107037424569, guid: 88d0473bff323424996548517b9f3067, type: 3}
-      propertyPath: m_SidewaysFriction.m_ExtremumSlip
-      value: 0.95
-      objectReference: {fileID: 0}
-    - target: {fileID: 6345306321217623829, guid: 88d0473bff323424996548517b9f3067, type: 3}
-      propertyPath: m_SidewaysFriction.m_ExtremumSlip
-      value: 0.95
+    - target: {fileID: 7877365779632544951, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
+      propertyPath: m_NormalizedViewPortRect.width
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 6859766158884063407, guid: 88d0473bff323424996548517b9f3067, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1410630049563692528, guid: 88d0473bff323424996548517b9f3067, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 258629739}
-  m_SourcePrefab: {fileID: 100100000, guid: 88d0473bff323424996548517b9f3067, type: 3}
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 705507995}
-  - {fileID: 963194228}
-  - {fileID: 6840927952649036846}
   - {fileID: 1965437682}
   - {fileID: 1001761433}
+  - {fileID: 8473759664480767637}
+  - {fileID: 1252430474}
