@@ -22,6 +22,8 @@ public class WheelController1 : MonoBehaviour
     private float currentBreakForce = 0f;
     private float currentTurnAngle = 0f;
 
+    public float turnSensitivity = 1.0f;
+
     public bool player1 = true;
 
 
