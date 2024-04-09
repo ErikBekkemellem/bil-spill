@@ -123,16 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!4 &200801454 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7073328635133459574, guid: 88d0473bff323424996548517b9f3067, type: 3}
-  m_PrefabInstance: {fileID: 314911152}
-  m_PrefabAsset: {fileID: 0}
---- !u!146 &314750937 stripped
-WheelCollider:
-  m_CorrespondingSourceObject: {fileID: 6345306321217623829, guid: 88d0473bff323424996548517b9f3067, type: 3}
-  m_PrefabInstance: {fileID: 314911152}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &314911152
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -141,25 +131,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 215424644614141394, guid: 88d0473bff323424996548517b9f3067, type: 3}
-      propertyPath: m_NormalizedViewPortRect.x
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 1410630049563692528, guid: 88d0473bff323424996548517b9f3067, type: 3}
       propertyPath: m_Name
       value: Free Racing Car (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1919373688781311570, guid: 88d0473bff323424996548517b9f3067, type: 3}
-      propertyPath: m_Name
-      value: RearLeftWheel2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3529522188413639293, guid: 88d0473bff323424996548517b9f3067, type: 3}
-      propertyPath: m_Name
-      value: RearRightWheel2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4107122466432723944, guid: 88d0473bff323424996548517b9f3067, type: 3}
-      propertyPath: m_Name
-      value: FrontRightWheel2
       objectReference: {fileID: 0}
     - target: {fileID: 4985054839256529577, guid: 88d0473bff323424996548517b9f3067, type: 3}
       propertyPath: m_LocalPosition.x
@@ -201,37 +175,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5810441972383928857, guid: 88d0473bff323424996548517b9f3067, type: 3}
-      propertyPath: m_Mass
-      value: 1000
-      objectReference: {fileID: 0}
-    - target: {fileID: 6391892871369750895, guid: 88d0473bff323424996548517b9f3067, type: 3}
-      propertyPath: m_Name
-      value: FrontLeftCollider
-      objectReference: {fileID: 0}
-    - target: {fileID: 6917204500583581962, guid: 88d0473bff323424996548517b9f3067, type: 3}
-      propertyPath: m_Name
-      value: FrontLeftWheel2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8716353144280357002, guid: 88d0473bff323424996548517b9f3067, type: 3}
-      propertyPath: m_Name
-      value: FrontRightCollider
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7373402439073059790, guid: 88d0473bff323424996548517b9f3067, type: 3}
-    - {fileID: 586762080137192047, guid: 88d0473bff323424996548517b9f3067, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1410630049563692528, guid: 88d0473bff323424996548517b9f3067, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1271697966}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88d0473bff323424996548517b9f3067, type: 3}
---- !u!4 &604338721 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1856003208498763593, guid: 88d0473bff323424996548517b9f3067, type: 3}
-  m_PrefabInstance: {fileID: 314911152}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1008139636
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,39 +274,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &1271697961 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1410630049563692528, guid: 88d0473bff323424996548517b9f3067, type: 3}
-  m_PrefabInstance: {fileID: 314911152}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1271697966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1271697961}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d15e74014fd64f848bc68f68e858be63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  frontRight: {fileID: 1572214656}
-  frontLeft: {fileID: 314750937}
-  backRight: {fileID: 1376384785}
-  backLeft: {fileID: 1565672192}
-  frontLeftTransform: {fileID: 1777650169}
-  frontRightTransform: {fileID: 1812300249}
-  backRightTransform: {fileID: 604338721}
-  backLeftTransform: {fileID: 200801454}
-  acceleration: 500
-  breakForce: 300
-  maxTurnAngle: 15
---- !u!146 &1376384785 stripped
-WheelCollider:
-  m_CorrespondingSourceObject: {fileID: 4326967937107409482, guid: 88d0473bff323424996548517b9f3067, type: 3}
-  m_PrefabInstance: {fileID: 314911152}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1407745061
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -416,26 +331,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52005168084e10d4998228ecb47015ee, type: 3}
---- !u!146 &1565672192 stripped
-WheelCollider:
-  m_CorrespondingSourceObject: {fileID: 5335565107037424569, guid: 88d0473bff323424996548517b9f3067, type: 3}
-  m_PrefabInstance: {fileID: 314911152}
-  m_PrefabAsset: {fileID: 0}
---- !u!146 &1572214656 stripped
-WheelCollider:
-  m_CorrespondingSourceObject: {fileID: 2429824785407922353, guid: 88d0473bff323424996548517b9f3067, type: 3}
-  m_PrefabInstance: {fileID: 314911152}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1777650169 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5355308461132383903, guid: 88d0473bff323424996548517b9f3067, type: 3}
-  m_PrefabInstance: {fileID: 314911152}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1812300249 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8257657160791871066, guid: 88d0473bff323424996548517b9f3067, type: 3}
-  m_PrefabInstance: {fileID: 314911152}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1829310251
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -444,6 +339,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 215424644614141394, guid: 88d0473bff323424996548517b9f3067, type: 3}
+      propertyPath: m_NormalizedViewPortRect.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1410630049563692528, guid: 88d0473bff323424996548517b9f3067, type: 3}
       propertyPath: m_Name
       value: Free Racing Car

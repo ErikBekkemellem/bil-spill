@@ -131,10 +131,9 @@ GameObject:
   - component: {fileID: 5810441972383928857}
   - component: {fileID: 7037430607169255479}
   - component: {fileID: 2962700776660195720}
-  - component: {fileID: 7373402439073059790}
   - component: {fileID: 2298111258113237177}
   m_Layer: 0
-  m_Name: Free Racing Car
+  m_Name: (Edited)Free Racing Car
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -229,29 +228,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.8032627, y: 0.66393614, z: 1.7016164}
   m_Center: {x: -0.0012401366, y: 0.62332, z: 1.1707928}
---- !u!114 &7373402439073059790
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1410630049563692528}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca5d6d9933a17bb43851cd91c273d027, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  frontRight: {fileID: 2429824785407922353}
-  frontLeft: {fileID: 6345306321217623829}
-  backRight: {fileID: 4326967937107409482}
-  backLeft: {fileID: 5335565107037424569}
-  frontLeftTransform: {fileID: 5355308461132383903}
-  frontRightTransform: {fileID: 8257657160791871066}
-  backRightTransform: {fileID: 1856003208498763593}
-  backLeftTransform: {fileID: 7073328635133459574}
-  acceleration: 900
-  breakForce: 300
-  maxTurnAngle: 15
 --- !u!114 &2298111258113237177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,7 +254,7 @@ GameObject:
   - component: {fileID: 7634806119109967044}
   - component: {fileID: 5483076112524857492}
   m_Layer: 0
-  m_Name: RearLeftWheel
+  m_Name: RearLeftWheel2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -444,7 +420,7 @@ GameObject:
   - component: {fileID: 4868537791415446958}
   - component: {fileID: 4035086549166997503}
   m_Layer: 0
-  m_Name: RearRightWheel
+  m_Name: RearRightWheel2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -562,7 +538,7 @@ GameObject:
   - component: {fileID: 1313307184201258153}
   - component: {fileID: 4129969909396932526}
   m_Layer: 0
-  m_Name: FrontRightWheel
+  m_Name: FrontRightWheel2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -817,7 +793,6 @@ GameObject:
   m_Component:
   - component: {fileID: 420216545642357512}
   - component: {fileID: 215424644614141394}
-  - component: {fileID: 586762080137192047}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -867,7 +842,7 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
+    x: 0.5
     y: 0
     width: 0.5
     height: 1
@@ -891,14 +866,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &586762080137192047
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6859766158884063407}
-  m_Enabled: 1
 --- !u!1 &6917204500583581962
 GameObject:
   m_ObjectHideFlags: 0
@@ -911,7 +878,7 @@ GameObject:
   - component: {fileID: 5864171951066527406}
   - component: {fileID: 1779134167616387310}
   m_Layer: 0
-  m_Name: FrontLeftWheel
+  m_Name: FrontLeftWheel2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

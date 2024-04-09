@@ -37,18 +37,22 @@ public class WheelController : MonoBehaviour
 
     public void Acceleration()
     {
-        currentAcceleration = acceleration * Input.GetAxis("Vertical1");
+        currentAcceleration = acceleration * 100 * Input.GetAxis("Vertical1");
 
-        backRight.motorTorque = currentAcceleration;
-        backLeft.motorTorque = currentAcceleration;
+        frontRight.motorTorque = currentAcceleration;
+        frontLeft.motorTorque = currentAcceleration;
     }
 
     public void Break()
     {
         if (Input.GetKey(KeyCode.Space))
-            currentBreakForce = breakForce;
+        {
+            currentBreakForce = breakForce * Time.deltaTime;
+        }
         else
+        {
             currentBreakForce = 0f;
+        }
 
         frontRight.brakeTorque = currentBreakForce;
         frontLeft.brakeTorque = currentBreakForce;
@@ -58,9 +62,11 @@ public class WheelController : MonoBehaviour
 
     public void Angle()
     {
-        currentTurnAngle = maxTurnAngle * Input.GetAxis("Horizontal1");
-        frontLeft.steerAngle = currentTurnAngle;
-        frontRight.steerAngle = currentTurnAngle;
+    
+        currentTurnAngle = Input.GetAxis("Horizontal1") * maxTurnAngle;
+        
+        frontLeft.steerAngle = Mathf.LerpAngle(currentTurnAngle, currentTurnAngle, 0.6f);
+        frontRight.steerAngle = Mathf.LerpAngle(currentTurnAngle, currentTurnAngle, 0.6f);
     }
 
     void UpdateWheel(WheelCollider col, Transform trans)

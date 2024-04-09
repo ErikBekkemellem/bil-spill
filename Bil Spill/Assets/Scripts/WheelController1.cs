@@ -50,8 +50,8 @@ public class WheelController1 : MonoBehaviour
         else
             currentBreakForce = 0f;
 
-        frontRight.brakeTorque = currentBreakForce;
-        frontLeft.brakeTorque = currentBreakForce;
+        //frontRight.brakeTorque = currentBreakForce;
+        //frontLeft.brakeTorque = currentBreakForce;
         backRight.brakeTorque = currentBreakForce;
         backLeft.brakeTorque = currentBreakForce;
     }
