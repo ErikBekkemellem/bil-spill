@@ -555,6 +555,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Free Racing Car
       objectReference: {fileID: 0}
+    - target: {fileID: 2429824785407922353, guid: 88d0473bff323424996548517b9f3067, type: 3}
+      propertyPath: m_SidewaysFriction.m_ExtremumSlip
+      value: 0.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 4326967937107409482, guid: 88d0473bff323424996548517b9f3067, type: 3}
+      propertyPath: m_SidewaysFriction.m_Stiffness
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4326967937107409482, guid: 88d0473bff323424996548517b9f3067, type: 3}
+      propertyPath: m_SidewaysFriction.m_ExtremumSlip
+      value: 0.95
+      objectReference: {fileID: 0}
     - target: {fileID: 4985054839256529577, guid: 88d0473bff323424996548517b9f3067, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -595,8 +607,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5335565107037424569, guid: 88d0473bff323424996548517b9f3067, type: 3}
+      propertyPath: m_SidewaysFriction.m_Stiffness
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5335565107037424569, guid: 88d0473bff323424996548517b9f3067, type: 3}
+      propertyPath: m_SidewaysFriction.m_ExtremumSlip
+      value: 0.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 6345306321217623829, guid: 88d0473bff323424996548517b9f3067, type: 3}
+      propertyPath: m_SidewaysFriction.m_ExtremumSlip
+      value: 0.95
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6859766158884063407, guid: 88d0473bff323424996548517b9f3067, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1410630049563692528, guid: 88d0473bff323424996548517b9f3067, type: 3}
