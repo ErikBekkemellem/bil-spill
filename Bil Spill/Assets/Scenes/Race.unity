@@ -18858,10 +18858,14 @@ PrefabInstance:
       objectReference: {fileID: 8400000, guid: 0e783b9505a105145a70cef94f178124, type: 2}
     - target: {fileID: 2717843712399104148, guid: 0a408acfd957b9d469498aa4ddf36985, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2717843712399104148, guid: 0a408acfd957b9d469498aa4ddf36985, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2717843712399104148, guid: 0a408acfd957b9d469498aa4ddf36985, type: 3}
+      propertyPath: m_NormalizedViewPortRect.height
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5064654061568696048, guid: 0a408acfd957b9d469498aa4ddf36985, type: 3}
@@ -20319,6 +20323,18 @@ PrefabInstance:
       propertyPath: m_TargetTexture
       value: 
       objectReference: {fileID: 8400000, guid: 0e783b9505a105145a70cef94f178124, type: 2}
+    - target: {fileID: 2062607259621199764, guid: 3236847d0be528d45b7461c040b8544c, type: 3}
+      propertyPath: m_NormalizedViewPortRect.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062607259621199764, guid: 3236847d0be528d45b7461c040b8544c, type: 3}
+      propertyPath: m_NormalizedViewPortRect.width
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062607259621199764, guid: 3236847d0be528d45b7461c040b8544c, type: 3}
+      propertyPath: m_NormalizedViewPortRect.height
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3693936736443218242, guid: 3236847d0be528d45b7461c040b8544c, type: 3}
       propertyPath: m_ForwardFriction.m_Stiffness
       value: 2.5
