@@ -6,20 +6,23 @@ using UnityEngine;
 public class finishline : MonoBehaviour
 {
     public bool checkPoint = false;
-    public bool P1Vant = false;
-    public bool P2Vant = false;
+    public bool P1Mål = false;
+    public bool P2Mål = false;
 
-    public GameObject Enemy;
+    bool P1Winner = false;
+    bool P2Winner = false;
+
+    int playerFinished = 0;
 
 
     private void Update()
     {
-        if (P1Vant == true)
+        if (P1Winner == true)
         {
 
         }
 
-        if (P2Vant == true)
+        if (P2Winner == true)
         {
 
         }
@@ -28,36 +31,34 @@ public class finishline : MonoBehaviour
 
     private void OnTriggerEnter(Collider target)
     {
-        /*
-        if(target.tag == "Finish Line" && gameObject.tag == "Player" && checkPoint == true)
+        if (target.tag == "Finish Line" && checkPoint == true)
         {
-            Enemy.tag = "Looser";
+            playerFinished ++;
         }
-        */
+ 
         if (target.tag == "Finish Line" && checkPoint == true && gameObject.tag == "Player")
         {
-            P1Vant = true;
+            P1Mål = true;
         }
 
         if (target.tag == "Finish Line" && checkPoint == true && gameObject.tag == "Player2")
         {
-            P2Vant = true;
+            P2Mål = true;
         }
 
         if (target.tag == "Check Point")
         {
             checkPoint = true;
         }
-        /*
-        if(target.tag == "Finish Line" && gameObject.tag == "Looser" && P2)
+
+        if (target.tag == "Finish Line" && checkPoint == true && P2Mål == true && P1Mål == false)
         {
-            Debug.Log("P1 vant");
+            P1Winner = true;
         }
 
-        if (target.tag == "Finish Line" && gameObject.tag == "Looser" && P1)
+        if (target.tag == "Finish Line" && checkPoint == true && P1Mål == true && P2Mål == false)
         {
-            Debug.Log("P2 vant");
+            P2Winner = true;
         }
-        */
     }
 }
