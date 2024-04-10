@@ -8,6 +8,9 @@ public class Logick : MonoBehaviour
 
     private void OnTriggerEnter(Collider target)
     {
-
+        if (target.tag == "Finish Line" && checkPoint == true )
+        {
+            
+        }
     }
 }
