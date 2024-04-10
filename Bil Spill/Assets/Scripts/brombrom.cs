@@ -62,6 +62,14 @@ public class brombrom : MonoBehaviour
             GetInputs();
             AnimateWheels();
         }
+        if (winnerWinnerChickenDinner == true)
+        {
+            maxAcceleration = 0f;
+            foreach (var wheel in wheels)
+            {
+                wheel.wheelCollider.brakeTorque = 70000 * brakeAcceleration;
+            }
+        }
         //WheelEffects();
     }
 

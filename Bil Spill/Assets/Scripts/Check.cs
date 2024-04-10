@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class Check : MonoBehaviour
 {
-    public bool checkPoint = true;
+    public bool checkPointP1 = false;
+    public bool checkPointP2 = false;
 
     // Start is called before the first frame update
     void Start()
@@ -21,9 +22,14 @@ public class Check : MonoBehaviour
 
     void OnTriggerEnter(Collider target)
     {
-        if (target.tag == "Check Point")
+        if (target.gameObject.tag == "Player2")
         {
-            checkPoint = true;
+            checkPointP2 = true;
+        }
+
+        if (target.gameObject.tag == "Player")
+        {
+            checkPointP1 = true;
         }
     }
 }
