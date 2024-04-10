@@ -6,8 +6,8 @@ using UnityEngine;
 public class finishline : MonoBehaviour
 {
     public bool checkPoint = false;
-    public bool P1Mål = false;
-    public bool P2Mål = false;
+    public bool P1Mal = false;
+    public bool P2Mal = false;
 
     bool P1Winner = false;
     bool P2Winner = false;
@@ -19,12 +19,12 @@ public class finishline : MonoBehaviour
     {
         if (P1Winner == true)
         {
-            Debug.Log("P2 vant");
+            Debug.Log("P1 vant");
         }
 
         else if (P2Winner == true)
         {  
-            Debug.Log("P1 vant");
+            Debug.Log("P2 vant");
         }
     }
 
@@ -35,12 +35,12 @@ public class finishline : MonoBehaviour
  
         if (target.tag == "Finish Line" && checkPoint == true && gameObject.tag == "Player")
         {
-            P1Mål = true;
+            P1Mal = true;
         }
 
         if (target.tag == "Finish Line" && checkPoint == true && gameObject.tag == "Player2")
         {
-            P2Mål = true;
+            P2Mal = true;
         }
 
         if (target.tag == "Check Point")
@@ -48,14 +48,15 @@ public class finishline : MonoBehaviour
             checkPoint = true;
         }
 
-        if (target.tag == "Finish Line" && P2Mål == true && P1Mål == false)
+        if (target.tag == "Finish Line" && P2Mal == true && P1Mal == false)
+        {
+            P2Winner = true;
+        }
+
+        if (target.tag == "Finish Line" && P1Mal == true && P2Mal == false)
         {
             P1Winner = true;
         }
 
-        if (target.tag == "Finish Line" && P1Mål == true && P2Mål == false)
-        {
-            P2Winner = true;
-        }
     }
 }
