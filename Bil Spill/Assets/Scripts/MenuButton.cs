@@ -9,4 +9,12 @@ public class MenuButton : MonoBehaviour
     {
         SceneManager.LoadScene(Race);
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyUp(KeyCode.R))
+        {
+            SceneManager.LoadScene("Race");
+        }
+    }
 }
