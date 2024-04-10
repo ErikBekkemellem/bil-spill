@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class finishline : MonoBehaviour
 {
+    /*
     public bool checkPoint = false;
     public bool P1Mal = false;
     public bool P2Mal = false;
@@ -59,4 +60,5 @@ public class finishline : MonoBehaviour
         }
 
     }
+    */
 }
