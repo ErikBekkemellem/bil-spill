@@ -12,29 +12,26 @@ public class finishline : MonoBehaviour
     bool P1Winner = false;
     bool P2Winner = false;
 
-    int playerFinished = 0;
+    
 
 
     private void Update()
     {
         if (P1Winner == true)
         {
-
+            Debug.Log("P2 vant");
         }
 
-        if (P2Winner == true)
-        {
-
+        else if (P2Winner == true)
+        {  
+            Debug.Log("P1 vant");
         }
     }
 
 
     private void OnTriggerEnter(Collider target)
     {
-        if (target.tag == "Finish Line" && checkPoint == true)
-        {
-            playerFinished ++;
-        }
+       
  
         if (target.tag == "Finish Line" && checkPoint == true && gameObject.tag == "Player")
         {
@@ -51,12 +48,12 @@ public class finishline : MonoBehaviour
             checkPoint = true;
         }
 
-        if (target.tag == "Finish Line" && checkPoint == true && P2Mål == true && P1Mål == false)
+        if (target.tag == "Finish Line" && P2Mål == true && P1Mål == false)
         {
             P1Winner = true;
         }
 
-        if (target.tag == "Finish Line" && checkPoint == true && P1Mål == true && P2Mål == false)
+        if (target.tag == "Finish Line" && P1Mål == true && P2Mål == false)
         {
             P2Winner = true;
         }
