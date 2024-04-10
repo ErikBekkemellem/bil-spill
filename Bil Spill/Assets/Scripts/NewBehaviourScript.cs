@@ -44,6 +44,8 @@ public class NewBehaviourScript : MonoBehaviour
 
     private Rigidbody carRb;
 
+    public bool winnerWinnerChickenDinner = false;
+
 
     void Start()
     {
@@ -55,9 +57,13 @@ public class NewBehaviourScript : MonoBehaviour
 
     void Update()
     {
-        GetInputs();
-        AnimateWheels();
-        WheelEffects();
+        if(winnerWinnerChickenDinner == false)
+        {
+            GetInputs();
+            AnimateWheels();
+        }
+        
+        //WheelEffects();
     }
 
     void LateUpdate()
@@ -135,7 +141,7 @@ public class NewBehaviourScript : MonoBehaviour
             wheel.wheelModel.transform.rotation = rot;
         }
     }
-
+    /*
     void WheelEffects()
     {
         foreach (var wheel in wheels)
@@ -153,4 +159,5 @@ public class NewBehaviourScript : MonoBehaviour
             }
         }
     }
+    */
 }

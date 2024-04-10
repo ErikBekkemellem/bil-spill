@@ -44,6 +44,8 @@ public class brombrom : MonoBehaviour
 
     private Rigidbody carRb;
 
+    public bool winnerWinnerChickenDinner = false;
+
 
     void Start()
     {
@@ -55,9 +57,12 @@ public class brombrom : MonoBehaviour
 
     void Update()
     {
-        GetInputs();
-        AnimateWheels();
-        WheelEffects();
+        if (winnerWinnerChickenDinner == false)
+        {
+            GetInputs();
+            AnimateWheels();
+        }
+        //WheelEffects();
     }
 
     void LateUpdate()
@@ -135,7 +140,7 @@ public class brombrom : MonoBehaviour
             wheel.wheelModel.transform.rotation = rot;
         }
     }
-
+    /*
     void WheelEffects()
     {
         foreach (var wheel in wheels)
@@ -153,4 +158,5 @@ public class brombrom : MonoBehaviour
             }
         }
     }
+    */
 }
