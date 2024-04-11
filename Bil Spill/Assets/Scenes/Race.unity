@@ -11795,8 +11795,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aafd9d90f6b99044c96899769a78bf74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkPointP1: 1
-  checkPointP2: 1
+  checkPointP1: 0
+  checkPointP2: 0
 --- !u!65 &1190921860
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15496,6 +15496,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9148960239488163218, guid: 87e0acbd6ddf7814097e377d5a5c716d, type: 3}
   m_PrefabInstance: {fileID: 1488600130}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1488967414 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6645616114513181105, guid: 3236847d0be528d45b7461c040b8544c, type: 3}
+  m_PrefabInstance: {fileID: 2032551404}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1495887673
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16827,10 +16832,22 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8090644614507775898, guid: 3236847d0be528d45b7461c040b8544c, type: 3}
   m_PrefabInstance: {fileID: 2032551404}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1488967414}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f7f527204ff19745b3218baa027a94e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1635659760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488967414}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ae406b8368aa884facb84fa8e1ee0f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1646403555
@@ -20264,6 +20281,14 @@ PrefabInstance:
       value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 3693936736443218242, guid: 3236847d0be528d45b7461c040b8544c, type: 3}
+      propertyPath: m_ForwardFriction.m_ExtremumSlip
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3693936736443218242, guid: 3236847d0be528d45b7461c040b8544c, type: 3}
+      propertyPath: m_SidewaysFriction.m_ExtremumSlip
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3693936736443218242, guid: 3236847d0be528d45b7461c040b8544c, type: 3}
       propertyPath: m_SidewaysFriction.m_AsymptoteValue
       value: 1
       objectReference: {fileID: 0}
@@ -20274,6 +20299,14 @@ PrefabInstance:
     - target: {fileID: 6088603988529228709, guid: 3236847d0be528d45b7461c040b8544c, type: 3}
       propertyPath: m_SidewaysFriction.m_Stiffness
       value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6088603988529228709, guid: 3236847d0be528d45b7461c040b8544c, type: 3}
+      propertyPath: m_ForwardFriction.m_ExtremumSlip
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6088603988529228709, guid: 3236847d0be528d45b7461c040b8544c, type: 3}
+      propertyPath: m_SidewaysFriction.m_ExtremumSlip
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6088603988529228709, guid: 3236847d0be528d45b7461c040b8544c, type: 3}
       propertyPath: m_SidewaysFriction.m_AsymptoteValue
@@ -20293,15 +20326,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6301142851818038027, guid: 3236847d0be528d45b7461c040b8544c, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.005646129
+      value: -0.0056460383
       objectReference: {fileID: 0}
     - target: {fileID: 6301142851818038027, guid: 3236847d0be528d45b7461c040b8544c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6301142851818038027, guid: 3236847d0be528d45b7461c040b8544c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.99998415
+      value: 0.9999841
       objectReference: {fileID: 0}
     - target: {fileID: 6301142851818038027, guid: 3236847d0be528d45b7461c040b8544c, type: 3}
       propertyPath: m_LocalRotation.z
@@ -20336,6 +20369,14 @@ PrefabInstance:
       value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 6515560375722041047, guid: 3236847d0be528d45b7461c040b8544c, type: 3}
+      propertyPath: m_ForwardFriction.m_ExtremumSlip
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6515560375722041047, guid: 3236847d0be528d45b7461c040b8544c, type: 3}
+      propertyPath: m_SidewaysFriction.m_ExtremumSlip
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6515560375722041047, guid: 3236847d0be528d45b7461c040b8544c, type: 3}
       propertyPath: m_SidewaysFriction.m_AsymptoteValue
       value: 1
       objectReference: {fileID: 0}
@@ -20355,6 +20396,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8090644614507775898, guid: 3236847d0be528d45b7461c040b8544c, type: 3}
+      propertyPath: maxSteerAngle
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 8111730343301294402, guid: 3236847d0be528d45b7461c040b8544c, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -20372,6 +20417,14 @@ PrefabInstance:
       value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 9178659444073187824, guid: 3236847d0be528d45b7461c040b8544c, type: 3}
+      propertyPath: m_ForwardFriction.m_ExtremumSlip
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9178659444073187824, guid: 3236847d0be528d45b7461c040b8544c, type: 3}
+      propertyPath: m_SidewaysFriction.m_ExtremumSlip
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9178659444073187824, guid: 3236847d0be528d45b7461c040b8544c, type: 3}
       propertyPath: m_SidewaysFriction.m_AsymptoteValue
       value: 1
       objectReference: {fileID: 0}
@@ -20386,7 +20439,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6645616114513181105, guid: 3236847d0be528d45b7461c040b8544c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1635659760}
   m_SourcePrefab: {fileID: 100100000, guid: 3236847d0be528d45b7461c040b8544c, type: 3}
 --- !u!1 &2032703787
 GameObject:
@@ -22559,7 +22615,7 @@ MonoBehaviour:
   maxAcceleration: 50
   brakeAcceleration: 500
   turnSensitivity: 0.5
-  maxSteerAngle: 30
+  maxSteerAngle: 15
   _centerOfMass: {x: 0, y: 0, z: 0}
   wheels:
   - wheelModel: {fileID: 1585165173306008096}
@@ -22602,13 +22658,13 @@ WheelCollider:
   m_Mass: 20
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
-    m_ExtremumSlip: 0.4
+    m_ExtremumSlip: 0.8
     m_ExtremumValue: 1
     m_AsymptoteSlip: 3
     m_AsymptoteValue: 0.5
     m_Stiffness: 2.5
   m_SidewaysFriction:
-    m_ExtremumSlip: 0.2
+    m_ExtremumSlip: 0.9
     m_ExtremumValue: 1
     m_AsymptoteSlip: 2.8
     m_AsymptoteValue: 1
@@ -23077,13 +23133,13 @@ WheelCollider:
   m_Mass: 20
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
-    m_ExtremumSlip: 0.4
+    m_ExtremumSlip: 0.8
     m_ExtremumValue: 1
     m_AsymptoteSlip: 3
     m_AsymptoteValue: 0.5
     m_Stiffness: 2.5
   m_SidewaysFriction:
-    m_ExtremumSlip: 0.2
+    m_ExtremumSlip: 0.9
     m_ExtremumValue: 1
     m_AsymptoteSlip: 2.8
     m_AsymptoteValue: 1
@@ -23362,13 +23418,13 @@ WheelCollider:
   m_Mass: 20
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
-    m_ExtremumSlip: 0.4
+    m_ExtremumSlip: 0.8
     m_ExtremumValue: 1
     m_AsymptoteSlip: 3
     m_AsymptoteValue: 0.5
     m_Stiffness: 2.5
   m_SidewaysFriction:
-    m_ExtremumSlip: 0.2
+    m_ExtremumSlip: 0.9
     m_ExtremumValue: 1
     m_AsymptoteSlip: 2.8
     m_AsymptoteValue: 1
@@ -23461,13 +23517,13 @@ WheelCollider:
   m_Mass: 20
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
-    m_ExtremumSlip: 0.4
+    m_ExtremumSlip: 0.8
     m_ExtremumValue: 1
     m_AsymptoteSlip: 3
     m_AsymptoteValue: 0.5
     m_Stiffness: 2.5
   m_SidewaysFriction:
-    m_ExtremumSlip: 0.2
+    m_ExtremumSlip: 0.9
     m_ExtremumValue: 1
     m_AsymptoteSlip: 2.8
     m_AsymptoteValue: 1
