@@ -3063,8 +3063,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 89683943}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.10488042, y: -0, z: -0.0000000037252903, w: 0.9944849}
-  m_LocalPosition: {x: 0.0000007947286, y: 3.25, z: -4.9866657}
+  m_LocalRotation: {x: 0.0520576, y: -0.000000029802322, z: 0.0000000055879354, w: 0.9986441}
+  m_LocalPosition: {x: 0.0000011920929, y: 2.7916665, z: -6.8616667}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -32618,7 +32618,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 1
-  m_FollowOffset: {x: 0, y: 0.9, z: -7.22}
+  m_FollowOffset: {x: 0, y: 0.35, z: -9.47}
   m_XDamping: 0.7
   m_YDamping: 0
   m_ZDamping: 0
@@ -34413,8 +34413,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1038644199}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.1048804, y: -0.000000029802322, z: 0.0000000037252903, w: 0.9944849}
-  m_LocalPosition: {x: -0.019999344, y: 3.25, z: -5.106666}
+  m_LocalRotation: {x: 0.0520576, y: -0.000000029802322, z: 0.0000000055879354, w: 0.9986441}
+  m_LocalPosition: {x: -0.019999344, y: 2.7916665, z: -6.981666}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -39012,7 +39012,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 1
-  m_FollowOffset: {x: 0, y: 0.9, z: -7.22}
+  m_FollowOffset: {x: 0, y: 0.35, z: -9.47}
   m_XDamping: 0.7
   m_YDamping: 0
   m_ZDamping: 0
@@ -48401,20 +48401,20 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 0.4245283, g: 0.41002244, b: 0.37046102, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
+    m_Type: 2
+    m_Resolution: 0
     m_CustomResolution: -1
     m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_Bias: 0.56
+    m_NormalBias: 0
+    m_NearPlane: 0.1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -48461,7 +48461,7 @@ Transform:
   m_GameObject: {fileID: 1416758922}
   serializedVersion: 2
   m_LocalRotation: {x: 0.40821794, y: -0.23456973, z: 0.109381676, w: 0.87542605}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: -19.6, y: 83.3, z: -90.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
