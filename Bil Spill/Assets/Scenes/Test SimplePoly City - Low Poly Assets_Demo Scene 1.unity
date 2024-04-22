@@ -3045,7 +3045,6 @@ GameObject:
   m_Component:
   - component: {fileID: 89683944}
   - component: {fileID: 89683948}
-  - component: {fileID: 89683947}
   - component: {fileID: 89683946}
   - component: {fileID: 89683945}
   m_Layer: 9
@@ -3144,14 +3143,6 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 984436268}
---- !u!81 &89683947
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 89683943}
-  m_Enabled: 1
 --- !u!20 &89683948
 Camera:
   m_ObjectHideFlags: 0
@@ -21436,7 +21427,7 @@ WheelCollider:
   m_Mass: 20
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
-    m_ExtremumSlip: 0.8
+    m_ExtremumSlip: 1.66
     m_ExtremumValue: 1
     m_AsymptoteSlip: 3
     m_AsymptoteValue: 0.5
@@ -32621,7 +32612,7 @@ MonoBehaviour:
   m_FollowOffset: {x: 0, y: 0.35, z: -9.47}
   m_XDamping: 0.7
   m_YDamping: 0
-  m_ZDamping: 0
+  m_ZDamping: 0.1
   m_AngularDampingMode: 0
   m_PitchDamping: 0
   m_YawDamping: 0
@@ -39015,7 +39006,7 @@ MonoBehaviour:
   m_FollowOffset: {x: 0, y: 0.35, z: -9.47}
   m_XDamping: 0.7
   m_YDamping: 0
-  m_ZDamping: 0
+  m_ZDamping: 0.5
   m_AngularDampingMode: 0
   m_PitchDamping: 0
   m_YawDamping: 0
@@ -41169,7 +41160,7 @@ WheelCollider:
   m_Mass: 20
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
-    m_ExtremumSlip: 0.8
+    m_ExtremumSlip: 1.66
     m_ExtremumValue: 1
     m_AsymptoteSlip: 3
     m_AsymptoteValue: 0.5
@@ -43836,7 +43827,7 @@ WheelCollider:
   m_Mass: 20
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
-    m_ExtremumSlip: 0.8
+    m_ExtremumSlip: 1.66
     m_ExtremumValue: 1
     m_AsymptoteSlip: 3
     m_AsymptoteValue: 0.5
@@ -48286,7 +48277,7 @@ WheelCollider:
   m_Mass: 20
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
-    m_ExtremumSlip: 0.8
+    m_ExtremumSlip: 1.66
     m_ExtremumValue: 1
     m_AsymptoteSlip: 3
     m_AsymptoteValue: 0.5
@@ -50989,8 +50980,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   control: 0
-  maxAcceleration: 50
-  brakeAcceleration: 500
+  maxAcceleration: 60
+  brakeAcceleration: 400
   turnSensitivity: 0.5
   maxSteerAngle: 15
   _centerOfMass: {x: 0, y: 0, z: 0}
@@ -52502,8 +52493,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   control: 0
-  maxAcceleration: 50
-  brakeAcceleration: 500
+  maxAcceleration: 60
+  brakeAcceleration: 400
   turnSensitivity: 0.5
   maxSteerAngle: 15
   _centerOfMass: {x: 0, y: 0, z: 0}
@@ -54922,7 +54913,7 @@ WheelCollider:
   m_Mass: 20
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
-    m_ExtremumSlip: 0.8
+    m_ExtremumSlip: 1.66
     m_ExtremumValue: 1
     m_AsymptoteSlip: 3
     m_AsymptoteValue: 0.5
@@ -56993,7 +56984,7 @@ WheelCollider:
   m_Mass: 20
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
-    m_ExtremumSlip: 0.8
+    m_ExtremumSlip: 1.66
     m_ExtremumValue: 1
     m_AsymptoteSlip: 3
     m_AsymptoteValue: 0.5
@@ -67849,7 +67840,7 @@ WheelCollider:
   m_Mass: 20
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
-    m_ExtremumSlip: 0.8
+    m_ExtremumSlip: 1.66
     m_ExtremumValue: 1
     m_AsymptoteSlip: 3
     m_AsymptoteValue: 0.5
@@ -70089,7 +70080,7 @@ WheelCollider:
   m_Mass: 20
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
-    m_ExtremumSlip: 0.8
+    m_ExtremumSlip: 1.66
     m_ExtremumValue: 1
     m_AsymptoteSlip: 3
     m_AsymptoteValue: 0.5
