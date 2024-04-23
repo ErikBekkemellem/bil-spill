@@ -4,15 +4,46 @@ using UnityEngine;
 
 public class Sound : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public Rigidbody carRb;
+
+    public float minSpeed;
+    public float maxSpeed;
+    private float currentSpeed;
+
+    private AudioSource carAudio;
+
+    public float minPitch;
+    public float maxPitch;
+    private float pitchFromCar;
+
     void Start()
     {
-        
+        carAudio = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        EngineSound();
+    }
+
+    void EngineSound()
+    {
+        currentSpeed = carRb.velocity.magnitude;
+        pitchFromCar = carRb.velocity.magnitude / 60f;
+
+        if (currentSpeed < minSpeed)
+        {
+            carAudio.pitch = minPitch;
+        }
+
+        if (currentSpeed > minSpeed && currentSpeed < maxSpeed)
+        {
+            carAudio.pitch = minPitch + pitchFromCar;
+        }
+
+        if (currentSpeed > maxSpeed)
+        {
+            carAudio.pitch = maxPitch;
+        }
     }
 }
