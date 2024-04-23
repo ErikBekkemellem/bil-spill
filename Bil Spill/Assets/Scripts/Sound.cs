@@ -45,5 +45,15 @@ public class Sound : MonoBehaviour
         {
             carAudio.pitch = maxPitch;
         }
+        /*
+        if (currentSpeed <= minSpeed)
+        {
+            carAudio.volume = 0.05f;
+        }
+        else
+        {
+            carAudio.volume = 0.15f;
+        }
+        */
     }
 }
