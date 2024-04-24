@@ -9,7 +9,7 @@ public class Logick : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.R))
         {
-            SceneManager.LoadScene("Race");
+            SceneManager.LoadScene("SimplePoly City - Low Poly Assets_Demo Scene");
         }
     }
 }
