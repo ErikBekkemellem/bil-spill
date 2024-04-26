@@ -121,7 +121,7 @@ public class NewBehaviourScript : MonoBehaviour
 
     void Brake()
     {
-        if (Input.GetKey(KeyCode.Space) || moveInput == 0)
+        if (Input.GetButton("Brake1") || moveInput == 0)
         {
             foreach (var wheel in wheels)
             {

@@ -121,7 +121,7 @@ public class brombrom : MonoBehaviour
 
     void Brake()
     {
-        if (Input.GetKey(KeyCode.Return) || moveInput == 0)
+        if (Input.GetButton("Brake2") || moveInput == 0)
         {
             foreach (var wheel in wheels)
             {
