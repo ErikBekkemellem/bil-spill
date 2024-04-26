@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/StartScreen.unity
-    guid: 4b893dbe62a673a4cb39d4bdf8b42c74
+    path: Assets/Scenes/StartScreenVaca.unity
+    guid: 2db7e847bf38a5d44bd814daf4fc6522
   - enabled: 1
     path: Assets/Scenes/SimplePoly City - Low Poly Assets_Demo Scene.unity
     guid: 7e6d3f4e5d896154ab4438845532ac3e
