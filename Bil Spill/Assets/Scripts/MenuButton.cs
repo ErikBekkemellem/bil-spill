@@ -7,7 +7,7 @@ public class MenuButton : MonoBehaviour
 {
     public void RestarScene()
     {
-        SceneManager.LoadScene("SimplePoly City - Low Poly Assets_Demo Scene");
+        SceneManager.LoadScene("StartSceneVaca");
     }
 
     

@@ -46,8 +46,14 @@ public class brombrom : MonoBehaviour
 
     private Rigidbody carRb;
 
-    public bool winnerWinnerChickenDinner = false;
+    public bool winnerWinnerChickenDinner;
 
+    public bool CanDriveP2;
+
+    private void Awake()
+    {
+        CanDriveP2 = false;
+    }
 
     void Start()
     {
@@ -59,7 +65,7 @@ public class brombrom : MonoBehaviour
 
     void Update()
     {
-        if (winnerWinnerChickenDinner == false)
+        if (winnerWinnerChickenDinner == false && CanDriveP2 == true)
         {
             GetInputs();
             AnimateWheels();

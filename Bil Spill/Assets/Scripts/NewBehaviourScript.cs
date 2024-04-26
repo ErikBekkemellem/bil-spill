@@ -44,8 +44,14 @@ public class NewBehaviourScript : MonoBehaviour
 
     private Rigidbody carRb;
 
-    public bool winnerWinnerChickenDinner = false;
+    public bool winnerWinnerChickenDinner;
 
+    public bool CanDriveP1;
+
+    private void Awake()
+    {
+        CanDriveP1 = false;
+    }
 
     void Start()
     {
@@ -57,7 +63,9 @@ public class NewBehaviourScript : MonoBehaviour
 
     void Update()
     {
-        if(winnerWinnerChickenDinner == false)
+
+
+        if(winnerWinnerChickenDinner == false && CanDriveP1 == true)
         {
             GetInputs();
             AnimateWheels();
