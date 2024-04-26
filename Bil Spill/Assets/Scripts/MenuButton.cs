@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class MenuButton : MonoBehaviour
 {
-    public void LoadScene(string Race)
+    public void RestarScene()
     {
-        SceneManager.LoadScene(Race);
+        SceneManager.LoadScene("SimplePoly City - Low Poly Assets_Demo Scene");
     }
 
     
