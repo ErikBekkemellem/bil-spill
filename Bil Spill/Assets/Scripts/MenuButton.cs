@@ -5,9 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class MenuButton : MonoBehaviour
 {
-    public void RestarScene()
+    void Update()
     {
-        SceneManager.LoadScene("StartSceneVaca");
+
+        if (Input.GetButton("Restart1") || Input.GetButton("Restart2"))
+        {
+            SceneManager.LoadScene("StartSceneVaca");
+        }
     }
 
     
