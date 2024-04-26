@@ -10,7 +10,7 @@ public class MenuButton : MonoBehaviour
 
         if (Input.GetButton("Restart1") || Input.GetButton("Restart2"))
         {
-            SceneManager.LoadScene("StartSceneVaca");
+            SceneManager.LoadScene("StartScreenVaca");
         }
     }
 
